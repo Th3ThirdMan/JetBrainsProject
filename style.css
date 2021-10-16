@@ -1,0 +1,405 @@
+/*
+* {
+    margin: 1px;
+    padding: 1px;
+}
+*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 10vh;
+    background-color: #5d4954;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+    color: rgb(228, 225, 225);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+}
+
+.nav-links a {
+    color:rgb(228, 225, 225);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 5px;
+    background-color:rgb(228, 225, 225);
+    margin: 3px;
+    cursor: pointer;
+    border-radius: 1em;
+    transition: all 0.7s ease;
+}
+
+ @media (min-width:899px) {
+        .hamburger {
+            visibility: hidden;
+        }
+     @media (max-width: 899px) {
+         nav {
+             visibility: hidden;
+         }
+         .hamburger {
+             visibility: visible;
+         }
+     }
+
+    .nav-links {
+        position: absolute;
+        right: 0;
+        height: 90vh;
+        top: 5vh;
+        background-color: #5d4954;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+}
+
+.nav-links li {
+    opacity: 0;
+}
+
+.hamburger {
+    display: block;
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.open-window {
+    background: black;
+    font-family: 'Poppins', sans-serif;
+    padding: 1em 2em;
+    color: rgb(228, 225, 225);
+    border: 0;
+}
+
+.open-window:hover {
+    background: #5d4954;
+}
+
+
+
+.window {
+    background: #ffffff;
+    padding: 1em 2em;
+    color: #fff;
+    border: 0;
+}
+
+
+.button:hover {
+    background: #333;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 20% auto;
+    padding: 15px;
+    width: 70%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.5), 0 7px 20px 0 rgba(0,0,0,0.2);
+    animation-name: modalopen;
+    animation-duration: 3s;
+    border-radius: 1rem;
+}
+
+.closeBtn {
+    float: right;
+    cursor: pointer;
+    color: white;
+}
+
+.modal-header {
+    background: #5d4954;
+    padding: 15px;
+    color: #fff;
+    border-radius: 1rem;
+}
+
+.modal-header h2, .modal-footer h3 {
+    margin: 0;
+}
+
+.window {
+    padding: 10px 20px;
+}
+
+.modal-footer {
+    background: #5d4954;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+
+.background {
+    background-color: grey;
+}
+
+
+.social-icon    {
+    color: red;
+    font-size: 50px;
+    float: right;
+    margin-right: 0.5em;
+    bottom: 20px;
+    position: relative;
+
+}
+
+.social-icon:hover {
+    color: blue;
+}
+
+.social-icon-insta  {
+    position: relative;
+    color: grey;
+    font-size: 50px;
+    float: right;
+    margin-right: 0.5em;
+    bottom: 20px;
+
+}
+
+.social-icon-insta:hover    {
+    color: blueviolet;
+}
+
+.social-icon-youtube    {
+    position: relative;
+    color: green;
+    font-size: 50px;
+    float: right;
+    margin-right: 0.5em;
+    bottom: 20px;
+
+}
+
+.social-icon-youtube:hover  {
+    color: darkorange;
+}
+
+.social-icon-facebook   {
+    position: relative;
+    color: brown;
+    font-size: 50px;
+    float: right;
+    margin-right: 0.5em;
+    bottom: 20px;
+}
+
+.social-icon-facebook:hover   {
+    color: dodgerblue;
+}
+
+#social {
+    background-color: #212329;
+    height: 40px;
+}
+
+
+#project        {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.projects       {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+#about  {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 400px;
+}
+
+header > h1  {
+    color: chocolate;
+    font-family: "Academy Engraved";
+    position: absolute;
+    top: 200px;
+    left: 30px;
+}
+
+h1.about   {
+    text-align: center;
+}
+
+#skills {
+    text-align: center;
+}
+
+ul  {
+    display: table;
+    margin: 0 auto;
+}
+
+.cover  {
+    position: absolute;
+    top: 740px;
+    left: 230px;
+    z-index: 1;
+}
+
+.person {
+    position: absolute;
+    top: 820px;
+    left: 350px;
+    z-index: 2;
+
+}
+#portfolio      {
+    display: flex;
+    background-color: burlywood;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+}
+
+#contacts   {
+    display: flex;
+    background-color: #212329;
+    justify-content: center;
+}
+
+.footer-container {
+    background-color: #212329;
+}
+
+.footer{
+    width: 80%;
+    height:40vh;
+    background-color: #212329;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.footer-heading    {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4rem;
+}
+
+.footer-heading h2  {
+    margin-bottom: 2rem;
+}
+
+.footer-heading a   {
+    color: white;
+    text-decoration: none;
+    margin-bottom:  0.5rem;
+}
+
+.footer-heading a:hover {
+    color: forestgreen;
+    transition: 0.3s ease-out;
+}
+
+.footer-email-form h2   {
+    margin-bottom: 2rem;
+}
+
+h2.portfolio   {
+    text-align: center;
+}
+
+p.text-about    {
+    margin-left: auto;
+    margin-right: auto;
+    width: 16em;
+}
+
+#photo_picture img  {
+    max-width: 100%;
+    overflow: hidden;
+    object-fit: inherit;
+    opacity: 1.1;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    text-align: center;
+}
+
+.container h1 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
