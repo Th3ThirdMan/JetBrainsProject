@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <title>Project</title>
+
+</head>
+
+<body>
+<nav>
+    <div class="logo">
+        <h4>The Nav</h4>
+    </div>
+    <ul class="nav-links">
+        <li>
+            <a href="#">Home</a>
+        </li>
+        <li>
+            <a href="#">About</a>
+        </li>
+        <li>
+            <a href="#">Work</a>
+        </li>
+        <li>
+            <a href="#">Projects</a>
+        </li>
+    </ul>
+    <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</nav>
+<script src="main.js"></script>
+
+<button id="modalBtn" class="open-window">CLICK HERE</button>
+<div id="simpleModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="closeBtn">&times;</span>
+            <h2>Modal Header</h2>
+        </div>
+        <div class="window"></div>
+        <p>Hello...I am a Modal</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Minus asperiores error at quisquam corporis veritatis labore,
+            nulla unde pariatur doloribus cupiditate ducimus rerum voluptatem qui!
+            Nobis et soluta hic placeat.</p>
+        <div class="modal-footer">
+            <h3>Modal Footer</h3>
+        </div>
+    </div>
+</div>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+<header class="background">
+<h1 id="about_me">JETBRAINS ACADEMY</h1>
+</header>
+
+<section id="photo_picture">
+    <img src="photos/bg.jpg" alt="view" width="1422px" height="600px" opacity="0.5">
+</section>
+
+<section id="about">
+    <h1 class="about">About Me</h1>
+    <img src="photos/image.jpg" alt="laptop" class="cover" width="250px" height="200px">
+    <img src="photos/person.jpg" alt="picture" class="person" width="150px" height="150px">
+
+    <p class="text-about">Lorem ipsum dolor sit amet, nec ad erant menandri vulputate, eos ex periculis dignissim.
+        Doming tibique cotidieque id sit. Quis libris mnesarchum usu ea, qui animal prompta ex.
+        Vim ex libris deserunt. Ex causae molestiae sententiae mel, unum placerat at sit. An clita iracundia qui.
+    </p>
+
+<section id="skills">
+        <h2>Skills</h2>
+        JavaScript<br>
+        HTML<br>
+        CSS
+</section>
+
+</section>
+
+<section id="portfolio">
+    <h2 class="portfolio">Portfolio</h2>
+    <div id="project">
+        <div class="projects">
+            <img src="photos/project1.png" width="500px" height="300px">
+        </div>
+
+        <div class="projects">
+            <img src="photos/project2.png" width="500px" height="300px">
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer-container">
+    <div class="footer">
+        <div class="footer-heading .footer-1">
+            <h2>About Us</h2>
+            <a href="#">Blog</a>
+            <a href="#">Demo</a>
+            <a href="#">Customers</a>
+            <a href="#">Terms of Service</a>
+        </div>
+        <div class="footer-heading .footer-2">
+            <h2>Contact Us</h2>
+            <a href="#">Jobs</a>
+            <a href="#">Support</a>
+        </div>
+        <div class="footer-heading .footer-3">
+            <h2>Social Media</h2>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+        </div>
+        <div class="footer-email-form">
+            <h2>Join our Newsletter</h2>
+            <input type="submit" value="Sign Up" id="footer-email-btn">
+            <section id="contacts">
+                <h2 class="contacts"></h2>
+            </section>
+        </div>
+    </div>
+    <div id="social">
+        <a class="social-icon" href="https://twitter.com" target=_blank>
+            <ion-icon name="logo-twitter"></ion-icon></a>
+        <a class="social-icon-insta" href="https://instagram.com" target="_blank>">
+            <ion-icon name="logo-instagram"></ion-icon></a>
+        <a class="social-icon-youtube" href="https://youtube.com" target="_blank>">
+            <ion-icon name="logo-youtube"></ion-icon></a>
+        <a class="social-icon-facebook" href="https://facebook.com" target="_blank>">
+            <ion-icon name="logo-facebook"></ion-icon></a>
+    </div>
+</footer>
+<script src="modal.js"></script>
+</body>
+</html>
